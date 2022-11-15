@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Roboto:wght@100;300;400;700&display=swap');
+
+body, main, h1, p, input, button, article, a
+{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body, header, main, footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body
+{
+  min-height: 100vh;
+  justify-content: space-around;
+  background-color: #0D4C92;
+  color: #ffffff;
+}
+
+header
+{
+  margin-top: 5rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+header p
+{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+main
+{
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.entry-group
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+.entry-group input
+{
+  padding: .5rem;
+  margin: .5rem;
+  height: 2rem;
+
+  font-size: 1.5rem;
+
+  border: none;
+  border-radius: 5px;
+  color: #0D4C92;
+}
+
+.message
+{
+  flex: 5;
+}
+
+.offset
+{
+  flex: 1;
+  width: 3rem;
+}
+
+.get-more
+{
+  margin: 1rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+button
+{
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+
+  border: none;
+  border-radius: 25px;
+
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #0D4C92;
+
+  background-color: #ffffff;
+}
+
+article
+{
+  margin: 2rem 5rem;
+  width: 40ch;
+  font-family: 'EB Garamond', serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+footer
+{
+  margin: 2rem;
+}
+
+a
+{
+  color: #59C1BD;
+}
