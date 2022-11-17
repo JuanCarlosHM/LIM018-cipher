@@ -43,7 +43,7 @@ main
   width: 100%;
 }
 
-.entry-group
+.entry-group, .btn-group, .error-group
 {
   display: flex;
   flex-direction: row;
@@ -52,11 +52,24 @@ main
   width: 80%;
 }
 
+.error-group
+{
+  display: none;
+  margin: 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: #CFF5E7;
+}
+
+.btn-group
+{
+  justify-content: center;
+}
+
 .entry-group input
 {
   padding: .5rem;
   margin: .5rem;
-  height: 2rem;
+  height: 1.5rem;
 
   font-size: 1.5rem;
 
@@ -104,10 +117,22 @@ button
 article
 {
   margin: 2rem 5rem;
-  width: 40ch;
+  max-width: 100vw;
   font-family: 'EB Garamond', serif;
+
+}
+
+article .title
+{
+  font-size: 1rem;
+  text-align: left;
+}
+
+article .body
+{
   font-size: 3rem;
   text-align: center;
+  word-break: break-word;
 }
 
 

@@ -11,7 +11,10 @@ const cipher = {
   encode: (offset, message) => {
     offset = parseInt(offset);
     let result = "";
-    message = message.trim();
+
+    if(!offset || !message) {
+       throw new TypeError("offset and message are not valid");
+    }
 
     for(let i = 0; i < message.length; i++)
     {
@@ -38,6 +41,5 @@ const cipher = {
     return cipher.encode(offset * -1, string)
   }
 };
-
 
 export default cipher;

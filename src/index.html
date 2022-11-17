@@ -16,14 +16,26 @@
 
 <main>
   <div class="entry-group">
-    <input class="message" type="text" placeholder="Enter your message"/>
-    <input class="offset" type="text" placeholder="Offset"/>
+    <input id="user-message" class="message" type="text" placeholder="Enter your message"/>
+    <input id="offset" class="offset" type="text" placeholder="Offset"/>
   </div>
-  <button> Trasform </button>
 
-  <p class="get-more"> if you want learn more about Caesar chyper click <a href="/"> here </a></p>
+  <div id="error-message" class="error-group">
+    <p> Please complete all fields  </p>
+  </div>
+  <div class="btn-group">
+    <button id="encode-btn"> Encode </button>
+    <button id="decode-btn"> Decode </button>
+  </div>
 
-  <article id="message">
+  <p class="get-more"> if you want learn more about Caesar chyper click
+    <a href="https://www.youtube.com/watch?v=zd8eVrXhs7Y&ab_channel=MichelleSeguil"
+       target="_blank"
+       rel="noopener noreferrer"> here.
+    </a>
+  </p>
+
+  <article id="result-message">
   </article>
 </main>
 
